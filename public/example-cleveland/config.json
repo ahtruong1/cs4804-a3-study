@@ -3,14 +3,10 @@
   "studyMetadata": {
     "title": "An Experiment in Graphical Perception",
     "version": "pilot",
-    "authors": [
-      "The 'Dream' team from CS4804 C25"
-    ],
+    "authors": ["The 'Dream' team from CS4804 C25"],
     "date": "2025-02-11",
     "description": "A replication of William Cleveland and Robert McGill's 1984 study on how humans perceive data through graphs.",
-    "organizations": [
-      "WPI"
-    ]
+    "organizations": ["WPI"]
   },
   "uiConfig": {
     "contactEmail": "",
@@ -49,10 +45,7 @@
             "value": "60"
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "response": [
         {
@@ -100,10 +93,7 @@
             "value": "60"
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "response": [
         {
@@ -151,10 +141,7 @@
             "value": "60"
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "response": [
         {
@@ -202,10 +189,7 @@
             "value": "60"
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "response": [
         {
@@ -228,6 +212,28 @@
       "path": "example-cleveland/assets/introduction.md",
       "response": []
     },
+    "consent": {
+      "type": "markdown",
+      "path": "example-cleveland/assets/consent-cm.md",
+      "nextButtonText": "Agree",
+      "response": [
+        {
+          "id": "signature",
+          "prompt": "Your signature",
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Please provide your signature"
+        },
+        {
+          "id": "accept",
+          "prompt": "Do you consent to the study and wish to continue?",
+          "requiredValue": "Accept",
+          "location": "belowStimulus",
+          "type": "radio",
+          "options": ["Decline", "Accept"]
+        }
+      ]
+    },
     "training1": {
       "type": "image",
       "path": "example-cleveland/assets/cm-training.png",
@@ -237,10 +243,7 @@
       "baseComponent": "bubbleChart",
       "description": "A bubble chart with correct answer of 0.66",
       "parameters": {
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "provideFeedback": true,
       "allowFailedTraining": false,
@@ -254,10 +257,7 @@
     "trainingStackedBarChart1": {
       "baseComponent": "stackedBarChart",
       "parameters": {
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "provideFeedback": true,
       "correctAnswer": [
@@ -270,10 +270,7 @@
     "trainingBarChart1": {
       "baseComponent": "barChart",
       "parameters": {
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "provideFeedback": true,
       "correctAnswer": [
@@ -286,10 +283,7 @@
     "trainingPieChart1": {
       "baseComponent": "pieChart",
       "parameters": {
-        "selectedIndices": [
-          1,
-          4
-        ]
+        "selectedIndices": [1, 4]
       },
       "provideFeedback": true,
       "correctAnswer": [
@@ -308,12 +302,7 @@
           "location": "aboveStimulus",
           "type": "dropdown",
           "placeholder": "Enter your preference",
-          "options": [
-            "Bar",
-            "Bubble",
-            "Pie",
-            "Stacked Bar"
-          ]
+          "options": ["Bar", "Bubble", "Pie", "Stacked Bar"]
         },
         {
           "id": "q2",
@@ -367,11 +356,14 @@
             "value": 34
           }
         ],
-        "selectedIndices": [
-          0,
-          1
-        ]
-      }
+        "selectedIndices": [0, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 5
+        }
+      ]
     },
     "stackedBarChart767": {
       "baseComponent": "stackedBarChart",
@@ -398,11 +390,14 @@
             "value": 18
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 10
+        }
+      ]
     },
     "stackedBarChart653": {
       "baseComponent": "stackedBarChart",
@@ -429,11 +424,14 @@
             "value": 55
           }
         ],
-        "selectedIndices": [
-          3,
-          2
-        ]
-      }
+        "selectedIndices": [3, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 15
+        }
+      ]
     },
     "stackedBarChart956": {
       "baseComponent": "stackedBarChart",
@@ -460,11 +458,14 @@
             "value": 33
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 20
+        }
+      ]
     },
     "stackedBarChart115": {
       "baseComponent": "stackedBarChart",
@@ -491,11 +492,14 @@
             "value": 69
           }
         ],
-        "selectedIndices": [
-          3,
-          2
-        ]
-      }
+        "selectedIndices": [3, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 25
+        }
+      ]
     },
     "stackedBarChart195": {
       "baseComponent": "stackedBarChart",
@@ -522,11 +526,14 @@
             "value": 59
           }
         ],
-        "selectedIndices": [
-          1,
-          3
-        ]
-      }
+        "selectedIndices": [1, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 30
+        }
+      ]
     },
     "stackedBarChart871": {
       "baseComponent": "stackedBarChart",
@@ -553,11 +560,14 @@
             "value": 65
           }
         ],
-        "selectedIndices": [
-          2,
-          3
-        ]
-      }
+        "selectedIndices": [2, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 35
+        }
+      ]
     },
     "stackedBarChart969": {
       "baseComponent": "stackedBarChart",
@@ -584,11 +594,14 @@
             "value": 25
           }
         ],
-        "selectedIndices": [
-          4,
-          2
-        ]
-      }
+        "selectedIndices": [4, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 40
+        }
+      ]
     },
     "stackedBarChart342": {
       "baseComponent": "stackedBarChart",
@@ -615,11 +628,14 @@
             "value": 19
           }
         ],
-        "selectedIndices": [
-          4,
-          3
-        ]
-      }
+        "selectedIndices": [4, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 45
+        }
+      ]
     },
     "stackedBarChart270": {
       "baseComponent": "stackedBarChart",
@@ -646,11 +662,14 @@
             "value": 9
           }
         ],
-        "selectedIndices": [
-          2,
-          3
-        ]
-      }
+        "selectedIndices": [2, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 50
+        }
+      ]
     },
     "stackedBarChart516": {
       "baseComponent": "stackedBarChart",
@@ -677,11 +696,14 @@
             "value": 68
           }
         ],
-        "selectedIndices": [
-          2,
-          0
-        ]
-      }
+        "selectedIndices": [2, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 55
+        }
+      ]
     },
     "stackedBarChart597": {
       "baseComponent": "stackedBarChart",
@@ -708,11 +730,14 @@
             "value": 40
           }
         ],
-        "selectedIndices": [
-          0,
-          1
-        ]
-      }
+        "selectedIndices": [0, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 60
+        }
+      ]
     },
     "stackedBarChart592": {
       "baseComponent": "stackedBarChart",
@@ -739,11 +764,14 @@
             "value": 32
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 65
+        }
+      ]
     },
     "stackedBarChart318": {
       "baseComponent": "stackedBarChart",
@@ -770,11 +798,14 @@
             "value": 80
           }
         ],
-        "selectedIndices": [
-          4,
-          3
-        ]
-      }
+        "selectedIndices": [4, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 70
+        }
+      ]
     },
     "stackedBarChart985": {
       "baseComponent": "stackedBarChart",
@@ -801,11 +832,14 @@
             "value": 10
           }
         ],
-        "selectedIndices": [
-          2,
-          0
-        ]
-      }
+        "selectedIndices": [2, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 75
+        }
+      ]
     },
     "stackedBarChart510": {
       "baseComponent": "stackedBarChart",
@@ -832,11 +866,14 @@
             "value": 77.60000000000001
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
-      }
+        "selectedIndices": [1, 4]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 80
+        }
+      ]
     },
     "stackedBarChart160": {
       "baseComponent": "stackedBarChart",
@@ -863,11 +900,14 @@
             "value": 13
           }
         ],
-        "selectedIndices": [
-          0,
-          2
-        ]
-      }
+        "selectedIndices": [0, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 85
+        }
+      ]
     },
     "stackedBarChart268": {
       "baseComponent": "stackedBarChart",
@@ -894,11 +934,14 @@
             "value": 98
           }
         ],
-        "selectedIndices": [
-          4,
-          2
-        ]
-      }
+        "selectedIndices": [4, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 90
+        }
+      ]
     },
     "stackedBarChart488": {
       "baseComponent": "stackedBarChart",
@@ -925,11 +968,14 @@
             "value": 25
           }
         ],
-        "selectedIndices": [
-          2,
-          1
-        ]
-      }
+        "selectedIndices": [2, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 95
+        }
+      ]
     },
     "stackedBarChart102": {
       "baseComponent": "stackedBarChart",
@@ -956,11 +1002,14 @@
             "value": 28
           }
         ],
-        "selectedIndices": [
-          4,
-          0
-        ]
-      }
+        "selectedIndices": [4, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 100
+        }
+      ]
     },
     "barChart499": {
       "baseComponent": "barChart",
@@ -987,11 +1036,14 @@
             "value": 34
           }
         ],
-        "selectedIndices": [
-          0,
-          1
-        ]
-      }
+        "selectedIndices": [0, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 5
+        }
+      ]
     },
     "barChart371": {
       "baseComponent": "barChart",
@@ -1018,11 +1070,14 @@
             "value": 18
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 10
+        }
+      ]
     },
     "barChart902": {
       "baseComponent": "barChart",
@@ -1030,30 +1085,33 @@
         "data": [
           {
             "name": "A",
-            "value": 94
+            "value": 88
           },
           {
             "name": "B",
-            "value": 63
+            "value": 21
           },
           {
             "name": "C",
-            "value": 15
+            "value": 12.750000000000002
           },
           {
             "name": "D",
-            "value": 7.5
+            "value": 85
           },
           {
             "name": "E",
-            "value": 9
+            "value": 55
           }
         ],
-        "selectedIndices": [
-          2,
-          3
-        ]
-      }
+        "selectedIndices": [3, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 15
+        }
+      ]
     },
     "barChart903": {
       "baseComponent": "barChart",
@@ -1080,11 +1138,14 @@
             "value": 33
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 20
+        }
+      ]
     },
     "barChart565": {
       "baseComponent": "barChart",
@@ -1111,11 +1172,14 @@
             "value": 69
           }
         ],
-        "selectedIndices": [
-          3,
-          2
-        ]
-      }
+        "selectedIndices": [3, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 25
+        }
+      ]
     },
     "barChart392": {
       "baseComponent": "barChart",
@@ -1142,11 +1206,14 @@
             "value": 59
           }
         ],
-        "selectedIndices": [
-          1,
-          3
-        ]
-      }
+        "selectedIndices": [1, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 30
+        }
+      ]
     },
     "barChart533": {
       "baseComponent": "barChart",
@@ -1173,11 +1240,14 @@
             "value": 65
           }
         ],
-        "selectedIndices": [
-          2,
-          3
-        ]
-      }
+        "selectedIndices": [2, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 35
+        }
+      ]
     },
     "barChart813": {
       "baseComponent": "barChart",
@@ -1204,11 +1274,14 @@
             "value": 25
           }
         ],
-        "selectedIndices": [
-          4,
-          2
-        ]
-      }
+        "selectedIndices": [4, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 40
+        }
+      ]
     },
     "barChart848": {
       "baseComponent": "barChart",
@@ -1235,13 +1308,50 @@
             "value": 19
           }
         ],
-        "selectedIndices": [
-          4,
-          3
-        ]
-      }
+        "selectedIndices": [4, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 45
+        }
+      ]
     },
     "barChart669": {
+      "baseComponent": "barChart",
+      "parameters": {
+        "data": [
+          {
+            "name": "A",
+            "value": 94
+          },
+          {
+            "name": "B",
+            "value": 63
+          },
+          {
+            "name": "C",
+            "value": 15
+          },
+          {
+            "name": "D",
+            "value": 7.5
+          },
+          {
+            "name": "E",
+            "value": 9
+          }
+        ],
+        "selectedIndices": [2, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 50
+        }
+      ]
+    },
+    "barChart777": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1266,13 +1376,16 @@
             "value": 68
           }
         ],
-        "selectedIndices": [
-          2,
-          0
-        ]
-      }
+        "selectedIndices": [2, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 55
+        }
+      ]
     },
-    "barChart777": {
+    "barChart835": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1297,13 +1410,16 @@
             "value": 40
           }
         ],
-        "selectedIndices": [
-          0,
-          1
-        ]
-      }
+        "selectedIndices": [0, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 60
+        }
+      ]
     },
-    "barChart835": {
+    "barChart598": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1328,13 +1444,16 @@
             "value": 32
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 65
+        }
+      ]
     },
-    "barChart598": {
+    "barChart258": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1359,13 +1478,16 @@
             "value": 80
           }
         ],
-        "selectedIndices": [
-          4,
-          3
-        ]
-      }
+        "selectedIndices": [4, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 70
+        }
+      ]
     },
-    "barChart258": {
+    "barChart294": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1390,13 +1512,16 @@
             "value": 10
           }
         ],
-        "selectedIndices": [
-          2,
-          0
-        ]
-      }
+        "selectedIndices": [2, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 75
+        }
+      ]
     },
-    "barChart294": {
+    "barChart403": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1421,13 +1546,16 @@
             "value": 77.60000000000001
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
-      }
+        "selectedIndices": [1, 4]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 80
+        }
+      ]
     },
-    "barChart403": {
+    "barChart322": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1452,13 +1580,16 @@
             "value": 13
           }
         ],
-        "selectedIndices": [
-          0,
-          2
-        ]
-      }
+        "selectedIndices": [0, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 85
+        }
+      ]
     },
-    "barChart322": {
+    "barChart159": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1483,13 +1614,16 @@
             "value": 98
           }
         ],
-        "selectedIndices": [
-          4,
-          2
-        ]
-      }
+        "selectedIndices": [4, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 90
+        }
+      ]
     },
-    "barChart159": {
+    "barChart693": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1514,13 +1648,16 @@
             "value": 25
           }
         ],
-        "selectedIndices": [
-          2,
-          1
-        ]
-      }
+        "selectedIndices": [2, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 95
+        }
+      ]
     },
-    "barChart693": {
+    "barChart853": {
       "baseComponent": "barChart",
       "parameters": {
         "data": [
@@ -1545,13 +1682,16 @@
             "value": 28
           }
         ],
-        "selectedIndices": [
-          4,
-          0
-        ]
-      }
+        "selectedIndices": [4, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 100
+        }
+      ]
     },
-    "pieChart853": {
+    "pieChart655": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1576,13 +1716,16 @@
             "value": 34
           }
         ],
-        "selectedIndices": [
-          0,
-          1
-        ]
-      }
+        "selectedIndices": [0, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 5
+        }
+      ]
     },
-    "pieChart655": {
+    "pieChart162": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1607,13 +1750,16 @@
             "value": 18
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 10
+        }
+      ]
     },
-    "pieChart162": {
+    "pieChart865": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1638,13 +1784,16 @@
             "value": 55
           }
         ],
-        "selectedIndices": [
-          3,
-          2
-        ]
-      }
+        "selectedIndices": [3, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 15
+        }
+      ]
     },
-    "pieChart865": {
+    "pieChart421": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1669,13 +1818,16 @@
             "value": 33
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 20
+        }
+      ]
     },
-    "pieChart421": {
+    "pieChart158": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1700,13 +1852,16 @@
             "value": 69
           }
         ],
-        "selectedIndices": [
-          3,
-          2
-        ]
-      }
+        "selectedIndices": [3, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 25
+        }
+      ]
     },
-    "pieChart158": {
+    "pieChart151": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1716,28 +1871,31 @@
           },
           {
             "name": "B",
-            "value": 29
+            "value": 25
           },
           {
             "name": "C",
-            "value": 10
+            "value": 93
           },
           {
             "name": "D",
-            "value": 56.00000000000001
+            "value": 7.5
           },
           {
             "name": "E",
-            "value": 80
+            "value": 59
           }
         ],
-        "selectedIndices": [
-          4,
-          3
-        ]
-      }
+        "selectedIndices": [1, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 30
+        }
+      ]
     },
-    "pieChart151": {
+    "pieChart698": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1762,13 +1920,16 @@
             "value": 65
           }
         ],
-        "selectedIndices": [
-          2,
-          3
-        ]
-      }
+        "selectedIndices": [2, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 35
+        }
+      ]
     },
-    "pieChart698": {
+    "pieChart588": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1793,13 +1954,16 @@
             "value": 25
           }
         ],
-        "selectedIndices": [
-          4,
-          2
-        ]
-      }
+        "selectedIndices": [4, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 40
+        }
+      ]
     },
-    "pieChart588": {
+    "pieChart614": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1824,13 +1988,16 @@
             "value": 19
           }
         ],
-        "selectedIndices": [
-          4,
-          3
-        ]
-      }
+        "selectedIndices": [4, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 45
+        }
+      ]
     },
-    "pieChart614": {
+    "pieChart973": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1855,13 +2022,16 @@
             "value": 9
           }
         ],
-        "selectedIndices": [
-          2,
-          3
-        ]
-      }
+        "selectedIndices": [2, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 50
+        }
+      ]
     },
-    "pieChart973": {
+    "pieChart643": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1886,13 +2056,16 @@
             "value": 68
           }
         ],
-        "selectedIndices": [
-          2,
-          0
-        ]
-      }
+        "selectedIndices": [2, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 55
+        }
+      ]
     },
-    "pieChart643": {
+    "pieChart261": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1917,13 +2090,16 @@
             "value": 40
           }
         ],
-        "selectedIndices": [
-          0,
-          1
-        ]
-      }
+        "selectedIndices": [0, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 60
+        }
+      ]
     },
-    "pieChart261": {
+    "pieChart620": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1948,13 +2124,50 @@
             "value": 32
           }
         ],
-        "selectedIndices": [
-          3,
-          0
-        ]
-      }
+        "selectedIndices": [3, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 65
+        }
+      ]
     },
-    "pieChart620": {
+    "pieChart182": {
+      "baseComponent": "pieChart",
+      "parameters": {
+        "data": [
+          {
+            "name": "A",
+            "value": 1
+          },
+          {
+            "name": "B",
+            "value": 29
+          },
+          {
+            "name": "C",
+            "value": 10
+          },
+          {
+            "name": "D",
+            "value": 56.00000000000001
+          },
+          {
+            "name": "E",
+            "value": 80
+          }
+        ],
+        "selectedIndices": [4, 3]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 70
+        }
+      ]
+    },
+    "pieChart971": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -1979,13 +2192,16 @@
             "value": 10
           }
         ],
-        "selectedIndices": [
-          2,
-          0
-        ]
-      }
+        "selectedIndices": [2, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 75
+        }
+      ]
     },
-    "pieChart182": {
+    "pieChart290": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -2010,13 +2226,16 @@
             "value": 77.60000000000001
           }
         ],
-        "selectedIndices": [
-          1,
-          4
-        ]
-      }
+        "selectedIndices": [1, 4]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 80
+        }
+      ]
     },
-    "pieChart971": {
+    "pieChart170": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -2041,13 +2260,16 @@
             "value": 13
           }
         ],
-        "selectedIndices": [
-          0,
-          2
-        ]
-      }
+        "selectedIndices": [0, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 85
+        }
+      ]
     },
-    "pieChart290": {
+    "pieChart709": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -2072,13 +2294,16 @@
             "value": 98
           }
         ],
-        "selectedIndices": [
-          4,
-          2
-        ]
-      }
+        "selectedIndices": [4, 2]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 90
+        }
+      ]
     },
-    "pieChart170": {
+    "pieChart169": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -2103,13 +2328,16 @@
             "value": 25
           }
         ],
-        "selectedIndices": [
-          2,
-          1
-        ]
-      }
+        "selectedIndices": [2, 1]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 95
+        }
+      ]
     },
-    "pieChart709": {
+    "pieChart791": {
       "baseComponent": "pieChart",
       "parameters": {
         "data": [
@@ -2134,22 +2362,25 @@
             "value": 28
           }
         ],
-        "selectedIndices": [
-          4,
-          0
-        ]
-      }
+        "selectedIndices": [4, 0]
+      },
+      "correctAnswer": [
+        {
+          "id": "cm-response",
+          "answer": 100
+        }
+      ]
     }
   },
   "sequence": {
     "order": "fixed",
     "components": [
       "introduction",
+      "consent",
       "training1",
       "trainingStackedBarChart1",
       "trainingBarChart1",
       "trainingPieChart1",
-      "trainingBubbleChart1",
       {
         "order": "random",
         "components": [
@@ -2192,7 +2423,7 @@
           "barChart322",
           "barChart159",
           "barChart693",
-          "pieChart853",
+          "barChart853",
           "pieChart655",
           "pieChart162",
           "pieChart865",
@@ -2210,7 +2441,9 @@
           "pieChart971",
           "pieChart290",
           "pieChart170",
-          "pieChart709"
+          "pieChart709",
+          "pieChart169",
+          "pieChart791"
         ]
       },
       "post-study-survey1"
