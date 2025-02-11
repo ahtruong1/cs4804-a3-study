@@ -204,6 +204,7 @@ export function ConfigSwitcher({
 
   const demos = configsList.filter((configName) => configName.startsWith('demo-'));
   const tutorials = configsList.filter((configName) => configName.startsWith('tutorial'));
+  const yours = configsList.filter((configName) => configName.startsWith('your-'));
   const examples = configsList.filter((configName) => configName.startsWith('example-'));
   const tests = configsList.filter((configName) => configName.startsWith('test-'));
   const libraries = configsList.filter((configName) => configName.startsWith('library-'));
@@ -249,6 +250,7 @@ export function ConfigSwitcher({
             {othersFiltered.length > 0 && (
               <Tabs.Tab value="Others">Your Studies</Tabs.Tab>
             )}
+            <Tabs.Tab value="Yours">Your Studies</Tabs.Tab>
             <Tabs.Tab value="Demos">Demo Studies</Tabs.Tab>
             <Tabs.Tab value="Examples">Example Studies</Tabs.Tab>
             <Tabs.Tab value="Tutorials">Tutorials</Tabs.Tab>
@@ -265,6 +267,11 @@ export function ConfigSwitcher({
           <Tabs.Panel value="Demos">
             <Text c="dimmed" mt="sm">These studies show off individual features of the reVISit platform.</Text>
             <StudyCards configNames={demos} studyConfigs={studyConfigs} />
+          </Tabs.Panel>
+
+          <Tabs.Panel value="Yours">
+            <Text c="dimmed" mt="sm">These are full studies that demonstrate the capabilities of the reVISit platform.</Text>
+            <StudyCards configNames={yours} studyConfigs={studyConfigs} />
           </Tabs.Panel>
 
           <Tabs.Panel value="Examples">

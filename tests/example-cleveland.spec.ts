@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 test('test', async ({ page }) => {
   await page.goto('/');
 
-  await page.getByRole('tab', { name: 'Example Studies' }).click();
+  await page.getByRole('tab', { name: 'Your Studies' }).click();
 
   // Click on cleveland
   await page.getByLabel('Example Studies').locator('div').filter({ hasText: 'Dynamic React.js Stimuli: A Graphical Perception Experiment' })
