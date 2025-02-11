@@ -1,21 +1,19 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Dynamic React.js Stimuli: A Graphical Perception Experiment",
+    "title": "An Experiment in Graphical Perception",
     "version": "pilot",
     "authors": [
-      "The reVISit Team"
+      "The 'Dream' team from CS4804 C25"
     ],
-    "date": "2023-04-28",
-    "description": "A demo using dynamic React components as stimuli to replicate a Heer/Bostock perception study (doi:10.1145/1753326.1753357) that extends Cleveland & McGill graphical perception task (doi:10.1080/01621459.1984.10478080), with a consent form, brief training, a post study survey. Data is collected via form elements in validated fields.",
+    "date": "2025-02-11",
+    "description": "A replication of William Cleveland and Robert McGill's 1984 study on how humans perceive data through graphs.",
     "organizations": [
-      "University of Utah",
-      "WPI",
-      "University of Toronto"
+      "WPI"
     ]
   },
   "uiConfig": {
-    "contactEmail": "contact@revisit.dev",
+    "contactEmail": "",
     "helpTextPath": "example-cleveland/assets/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
@@ -229,31 +227,6 @@
       "type": "markdown",
       "path": "example-cleveland/assets/introduction.md",
       "response": []
-    },
-    "consent": {
-      "type": "markdown",
-      "path": "example-cleveland/assets/consent-cm.md",
-      "nextButtonText": "Agree",
-      "response": [
-        {
-          "id": "signature",
-          "prompt": "Your signature",
-          "location": "belowStimulus",
-          "type": "shortText",
-          "placeholder": "Please provide your signature"
-        },
-        {
-          "id": "accept",
-          "prompt": "Do you consent to the study and wish to continue?",
-          "requiredValue": "Accept",
-          "location": "belowStimulus",
-          "type": "radio",
-          "options": [
-            "Decline",
-            "Accept"
-          ]
-        }
-      ]
     },
     "training1": {
       "type": "image",
@@ -2172,11 +2145,11 @@
     "order": "fixed",
     "components": [
       "introduction",
-      "consent",
       "training1",
       "trainingStackedBarChart1",
       "trainingBarChart1",
       "trainingPieChart1",
+      "trainingBubbleChart1",
       {
         "order": "random",
         "components": [

@@ -1,5 +1,7 @@
 # Introduction
 
-Welcome to our study. This is a more complex example to show how to embed React.js components into the study page. In this example, React components are responsible for rendering the stimuli, but the reVISit framework automatically handles  answer tracking.
+Thank you for participating in our study today. We are students who are currently taking CS4804, data visualization, with Professor Lane Harrison. As an assignment, we are replicating a famous study on graphical perception by Cleveland & McGill in 1984. 
 
-This study is a replication of a graphical perception study by Clevland & McGill 1984 with the Heer & Bostock 2010 extension.
+The goal of the study is to learn how people interpret different types of charts. You will be shown a series of charts and asked questions about them.
+
+The study is only for academic use and will not be officially published. Don't overthink your answers. We are looking for natural, instinctive answers. Thank you for your participating!
