@@ -250,7 +250,6 @@ export function ConfigSwitcher({
             {othersFiltered.length > 0 && (
               <Tabs.Tab value="Others">Your Studies</Tabs.Tab>
             )}
-            <Tabs.Tab value="Yours">Your Studies</Tabs.Tab>
             <Tabs.Tab value="Demos">Demo Studies</Tabs.Tab>
             <Tabs.Tab value="Examples">Example Studies</Tabs.Tab>
             <Tabs.Tab value="Tutorials">Tutorials</Tabs.Tab>

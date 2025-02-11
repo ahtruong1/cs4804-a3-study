@@ -239,21 +239,6 @@
       "path": "example-cleveland/assets/cm-training.png",
       "response": []
     },
-    "trainingBubbleChart1": {
-      "baseComponent": "bubbleChart",
-      "description": "A bubble chart with correct answer of 0.66",
-      "parameters": {
-        "selectedIndices": [1, 4]
-      },
-      "provideFeedback": true,
-      "allowFailedTraining": false,
-      "correctAnswer": [
-        {
-          "id": "cm-response",
-          "answer": 66
-        }
-      ]
-    },
     "trainingStackedBarChart1": {
       "baseComponent": "stackedBarChart",
       "parameters": {
