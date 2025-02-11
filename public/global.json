@@ -3,7 +3,7 @@
   "configsList": [
     "tutorial",
     "example-brush-interactions",
-    "example-cleveland",
+    "your-cleveland",
     "example-mvnv",
     "example-fairness-jnd",
     "demo-html",
@@ -39,7 +39,7 @@
     "example-brush-interactions": {
       "path": "example-brush-interactions/config.json"
     },
-    "example-cleveland": {
+    "your-cleveland": {
       "path": "example-cleveland/config.json"
     },
     "example-mvnv": {
