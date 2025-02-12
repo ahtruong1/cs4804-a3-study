@@ -2362,6 +2362,7 @@
     "order": "fixed",
     "components": [
       "introduction",
+      "consent",
       "training1",
       "trainingStackedBarChart1",
       "trainingBarChart1",
