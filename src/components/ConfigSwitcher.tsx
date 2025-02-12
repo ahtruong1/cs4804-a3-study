@@ -1,8 +1,8 @@
 import {
-  Anchor, AppShell, Button, Card, Container, Divider, Flex, Image, rem, Tabs, Text,
+  AppShell, Button, Card, Container, Divider, Flex, Image, Tabs, Text,
 } from '@mantine/core';
 import {
-  IconAlertTriangle, IconChartHistogram, IconExternalLink, IconListCheck,
+  IconAlertTriangle, IconChartHistogram, IconListCheck,
 } from '@tabler/icons-react';
 import { useEffect, useMemo, useState } from 'react';
 import { Timestamp } from 'firebase/firestore';
@@ -18,8 +18,6 @@ import { useStorageEngine } from '../storage/storageEngineHooks';
 import { REVISIT_MODE } from '../storage/engines/StorageEngine';
 import { FirebaseStorageEngine } from '../storage/engines/FirebaseStorageEngine';
 import { useAuth } from '../store/hooks/useAuth';
-
-const REVISIT_GITHUB_PUBLIC = 'https://github.com/revisit-studies/study/tree/main/public/';
 
 function StudyCard({ configName, config, url }: { configName: string; config: ParsedConfig<StudyConfig>; url: string }) {
   const { storageEngine } = useStorageEngine();
@@ -105,21 +103,6 @@ function StudyCard({ configName, config, url }: { configName: string; config: Pa
               {config.studyMetadata.authors.join(', ')}
             </Text>
             <Text c="dimmed">{config.studyMetadata.description}</Text>
-            <Text c="dimmed" ta="right" style={{ paddingRight: 5 }}>
-              <Anchor
-                target="_blank"
-                onClick={(e) => e.stopPropagation()}
-                href={`${REVISIT_GITHUB_PUBLIC}${url}`}
-              >
-                View source:
-                {' '}
-                {url}
-                <IconExternalLink style={{
-                  width: rem(18), height: rem(18), marginLeft: rem(2), marginBottom: rem(-3),
-                }}
-                />
-              </Anchor>
-            </Text>
 
             {config.warnings.length > 0 && (
               <>
