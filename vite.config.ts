@@ -1,20 +1,16 @@
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }) => {
-  const env = loadEnv(mode, process.cwd());
-
-  return {
-    base: command === 'build' ? '/a3-study/' : env.VITE_BASE_PATH,
-    plugins: [
-      react({ devTarget: 'es2022' }),
-    ],
-    resolve: {
-      alias: {
-        // /esm/icons/index.mjs only exports the icons statically, so no separate chunks are created
-        '@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
-      },
+export default defineConfig(() => ({
+  base: '/a3-study/',
+  plugins: [
+    react({ devTarget: 'es2022' }),
+  ],
+  resolve: {
+    alias: {
+      // /esm/icons/index.mjs only exports the icons statically, so no separate chunks are created
+      '@tabler/icons-react': '@tabler/icons-react/dist/esm/icons/index.mjs',
     },
-  };
-});
+  },
+}));
