@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/GlobalConfigSchema.json",
+  "configsList": [
+    "your-cleveland",
+    "example-cleveland"
+  ],
+  "configs": {
+    "your-cleveland": {
+      "path": "example-cleveland/config.json"
+    },
+    "example-cleveland": {
+      "path": "example-cleveland/config.json"
+    }
+  }
+}
