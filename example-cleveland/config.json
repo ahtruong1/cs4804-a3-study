@@ -14,7 +14,8 @@
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
-    "sidebar": true
+    "sidebar": true,
+    "nextOnEnter": true
   },
   "baseComponents": {
     "bubbleChart": {
@@ -2361,7 +2362,6 @@
     "order": "fixed",
     "components": [
       "introduction",
-      "consent",
       "training1",
       "trainingStackedBarChart1",
       "trainingBarChart1",
