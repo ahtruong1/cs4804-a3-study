@@ -8,7 +8,7 @@ reVISit introduces reVISit.spec a DSL for specifying study setups (consent forms
 
 To run this demo experiment locally, you will need to install node on your computer. 
 
-* Clone `https://github.com/revisit-studies/study`
+* Clone `https://github.com/ahtruong1/a3-study`
 * Run `yarn install`. If you don't have yarn installed, run `npm i -g yarn`. 
 * To run locally, run `yarn serve`.
 * Go to [http://localhost:8080](http://localhost:8080) to view it in your browser. The page will reload when you make changes. 
